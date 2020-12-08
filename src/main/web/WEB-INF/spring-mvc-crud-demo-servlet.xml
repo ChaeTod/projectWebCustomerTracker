@@ -11,8 +11,7 @@
 		http://www.springframework.org/schema/context/spring-context.xsd
 		http://www.springframework.org/schema/mvc
 		http://www.springframework.org/schema/mvc/spring-mvc.xsd
-		http://www.springframework.org/schema/tx
-		http://www.springframework.org/schema/tx/spring-tx.xsd">
+">
 
     <!-- Add support for component scanning -->
     <context:component-scan base-package="sk.it.Artem"/>
@@ -23,7 +22,7 @@
     <!-- Define Spring MVC view resolver -->
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/view/"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 
