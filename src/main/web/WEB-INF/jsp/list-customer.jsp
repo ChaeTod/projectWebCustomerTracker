@@ -8,7 +8,33 @@
 </head>
 <body>
 
-    <div>Working!</div>
+<div id="wrapper">
+    <div id="header">
+        <h2>CRM - Customer Application</h2>
+    </div>
+</div>
+
+<div id="container">
+    <div id="content">
+        <table>
+            <tr>
+                <th>Fist Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+
+            <c:forEach var="tempCustomer" items="${customers}">
+                <tr>
+                    <td>${tempCustomer.firstName}</td>
+                    <td>${tempCustomer.lastName}</td>
+                    <td>${tempCustomer.email}</td>
+                </tr>
+            </c:forEach>
+        </table>
+
+    </div>
+</div>
+
 
 </body>
 </html>
