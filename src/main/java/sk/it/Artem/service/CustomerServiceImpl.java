@@ -9,7 +9,7 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
-public class CustomerServiceImlp implements CustomerService{
+public class CustomerServiceImpl implements CustomerService{
 
     @Autowired
     private CustomerDAO customerDAO;  // inject Customer DAO
